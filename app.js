@@ -49,3 +49,14 @@ const renderResults = (list) => {
           ${cardsList}
         </div>`;
 };
+
+window.addEventListener("load", function () {
+  var loader = document.getElementById("loader");
+  var loaderVideo = document.getElementById("loader-video");
+
+  // Hide the loader after 7 seconds
+  setTimeout(function () {
+    loader.classList.add("hidden");
+    loaderVideo.pause();
+  }, 5000);
+});
