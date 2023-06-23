@@ -14,4 +14,25 @@ form.addEventListener("submit", (e) => {
     result.innerHTML = '<div class="error">Please Enter Valid Search Term';
     return;
   }
+  fetchPages(value);
 });
+
+const fetchPages = async (searchValue) => {
+  result.innerHTML = '<div class="loading"></div>';
+  try {
+    const response = await fetch(`${url}${searchValue}`);
+    const data = await response.json();
+    const results = data.query.search;
+    if (results.length < 1) {
+      result.innerHTML = '<div class="error">No matching results.</div>';
+      return;
+    }
+    renderResults(results);
+  } catch (error) {
+    result.innerHTML = '<div class="error">Error</div>';
+  }
+};
+
+const renderResults = (list) => {
+  console.log(list);
+};
