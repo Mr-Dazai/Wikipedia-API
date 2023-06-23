@@ -19,7 +19,7 @@ The goal of this project is to provide a simple and easy-to-use interface for ac
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/project-name.git
+   git clone https://github.com/Mr-Dazai/Wikipedia-API.com
    
 2. Install the required dependencies:
    
