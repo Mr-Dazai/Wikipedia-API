@@ -18,11 +18,13 @@ The goal of this project is to provide a simple and easy-to-use interface for ac
 
 1. Clone the repository:
 
-   ```bash git clone https://github.com/your-username/project-name.git
+   ```bash
+   git clone https://github.com/your-username/project-name.git
    
 2. Install the required dependencies:
    
-   ```bash pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
