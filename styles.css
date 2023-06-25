@@ -17,13 +17,16 @@
   opacity: 0;
   z-index: -9999;
 }
-.loader-image {
-  max-width: 100%;
+.loader-video {
+  max-width: 80%;
   max-height: 100%;
-  width: auto;
-  height: auto;
 }
-
+@media screen and (min-width: 992px) {
+  .loader-video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
 *,
 ::after,
 ::before {
